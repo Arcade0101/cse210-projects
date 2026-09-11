@@ -25,6 +25,12 @@ class Program
             }
         }
 
+        if (numbers.Count == 0)
+        {
+            Console.WriteLine("No numbers were entered.");
+            return;
+        }
+
         // Core Requirement 1: Calculate Sum
         int sum = 0;
         foreach (int number in numbers)

@@ -48,7 +48,7 @@ class Program
                     sign = "+";
                 }
             }
-            else if (lastDigit < 3)
+            else if (lastDigit < 3 && percent < 93)
             {
                 sign = "-";
             }
