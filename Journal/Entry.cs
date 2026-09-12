@@ -2,7 +2,7 @@ using System;
 
 public class Entry
 {
-    private const string Separator = "~|~";
+    private const string _separator = "~|~";
 
     private string _date;
     private string _promptText;
@@ -28,12 +28,12 @@ public class Entry
     public string GetSaveString()
     {
         // Response goes last
-        return $"{Clean(_date)}{Separator}{Clean(_promptText)}{Separator}{Clean(_mood)}{Separator}{_entryText}";
+        return $"{Clean(_date)}{_separator}{Clean(_promptText)}{_separator}{Clean(_mood)}{_separator}{_entryText}";
     }
 
     public static Entry FromSaveString(string line)
     {
-        string[] parts = line.Split(Separator, 4);
+        string[] parts = line.Split(_separator, 4);
 
         if (parts.Length == 4)
         {
@@ -56,6 +56,6 @@ public class Entry
             return "";
         }
 
-        return text.Replace(Separator, "/");
+        return text.Replace(_separator, "/");
     }
 }
