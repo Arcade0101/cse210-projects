@@ -5,3 +5,4 @@
 ## 📂 Weekly Assignments
 
 * **`Prep/`** — W01 C# Prep Exercises (Variables, Conditionals, Loops, Lists, Functions)
+* **`Journal/`** — W02 Journal Program (Classes, Abstraction, File I/O)
